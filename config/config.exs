@@ -21,7 +21,7 @@ config :rpg, GameWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Game.PubSub,
-  live_view: [signing_salt: "/XNTg2s9"]
+  live_view: [signing_salt: "6nfqTSil"]
 
 # Configures the mailer
 #

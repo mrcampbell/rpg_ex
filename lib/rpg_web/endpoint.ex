@@ -7,7 +7,7 @@ defmodule GameWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_rpg_key",
-    signing_salt: "HM/Um+dR",
+    signing_salt: "UnNple8I",
     same_site: "Lax"
   ]
 

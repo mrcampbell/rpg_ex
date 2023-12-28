@@ -10,31 +10,17 @@ config :rpg, Game.Repo,
 # For development, we disable any cache and enable
 # debugging and code reloading.
 #
-# https: [
-#       port: 4001,
-#       cipher_suite: :strong,
-#       keyfile: "priv/cert/selfsigned_key.pem",
-#       certfile: "priv/cert/selfsigned.pem"
-#     ],
-
-#
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we can use it
 # to bundle .js and .css sources.
 config :rpg, GameWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {0, 0, 0, 0}, port: 8080],
-  https: [
-    port: 443,
-    cipher_suite: :strong,
-    keyfile: "priv/cert/selfsigned_key.pem",
-    certfile: "priv/cert/selfsigned.pem"
-  ],
+  http: [ip: {127, 0, 0, 1}, port: 4000],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "2DTdygdl1BncrmBBGtVdalzCENJdBmir0HF32oMtwP5petGUBXnYgANUcGzertYR",
+  secret_key_base: "AEcIt9fyJjH3P7agVfSqt7vIkbD5YnOaeoOZGj57QZgzAWJKNrv/S2GMV7JWpP+m",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}

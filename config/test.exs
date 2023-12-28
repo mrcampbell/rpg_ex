@@ -14,7 +14,7 @@ config :rpg, Game.Repo,
 # you can enable the server option below.
 config :rpg, GameWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "TFTZLRdjVffdX99ZScQXxyBcpx8swMkHcA0F1bhYjRnzMxoUY41b045iX8akBcjn",
+  secret_key_base: "OnhFB6CAQIshSD9DXoB+EAYjs7MbXhGfaDBKyyI9EGmqCWOLi177g1tdKEX8cG3C",
   server: false
 
 # In test we don't send emails.
